@@ -283,6 +283,8 @@ body {
 #skills {
     padding: var(--sectionPadding);
     margin-top: 0rem;
+    animation: fade 1s ease forwards;
+    animation: slideTop 1s ease forwards;
 }
 
 .skills-grid {
@@ -440,11 +442,6 @@ body {
     .fade {
         animation-name: fade;
         animation-duration: 1.5s;
-    }
-    
-    @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
     }
 
   .portfolio img {
