@@ -331,8 +331,55 @@ body {
   }
   
   .education-years {
-    margin-bottom: 2rem;
     font-size: 13px;
+  }
+  
+  .contents-res .box{
+    position: relative;
+    padding: 20px;
+    /* border: 1px solid var(--main-color); */
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+  }
+  
+  .contents-res .box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+  }
+  
+  .box h4{
+    position: relative;
+    color: var(--main-color);
+  }
+  
+  .box h3{
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    font-family: helvetica;
+    color: #444;
+  }
+  
+  .box p{
+    line-height: 1.2;
+    color: #666;
+    font-size: 17px;
+  }
+
+  @media (max-width: 168px){
+    .row{
+      grid-template-columns: 1fr;
+    }
+    .contents-res{
+      padding: 0px 0px;
+      border-left: 2px solid #bababa;
+    }
+    .contents-res .box{
+      position: relative;
+      padding: 20px;
+      cursor: pointer;
+      transition: all 0.4s;
+    }
   }
   
   /* The dot on the line */
