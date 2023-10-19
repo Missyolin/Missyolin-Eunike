@@ -12,11 +12,6 @@
     --main-color: #183D3D;
 }
 
-.dark-mode {
-    --primary-color:  #0b061f;
-    --secondary-color: #ffff;
-}
-
 body {
     /* background: var(--primary-color); */
     /* color: var(--secondary-color); */
@@ -213,26 +208,28 @@ body {
     padding: 13px 0;
 }
 
-.profession-box .profession:nth-child(1) i {
+.profession-box .profession:nth-child(0) i {
     margin-right: 15px;
+}
+
+.profession-box .profession:nth-child(1) i {
+    padding-bottom: 20px;
 }
 
 .profession-box .profession:nth-child(2) i {
     padding-bottom: 20px;
-}
-
-.profession-box .profession:nth-child(4) i {
-    padding-bottom: 20px;
+    margin-right: 3rem;
 }
 
 .profession i {
-    font-size: 38px;
+    font-size: 30px;
 }
 
 .profession h3 {
     font-size: 32px;
     line-height: 1;
-    font-weight: 600;
+    /* font-weight: 600; */
+    padding: .5rem;
 }
 
 .profession-box .circle {
@@ -269,14 +266,25 @@ body {
 }
 
 /* about */
+.about-grid {
+  display: grid;
+  /* grid-template-columns: 40% 60%; */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
 .about-description {
     padding: 1rem 7rem 2rem;
     text-align: justify;
     font-size:larger;
 }
 
+.about-description img {
+  width: 100%;
+}
+
 .vision, .mission {
-    font-size: x-large;
+    font-size: 32px;
+    color: var(--main-color);
 }
 
 /* Skills and Education */
